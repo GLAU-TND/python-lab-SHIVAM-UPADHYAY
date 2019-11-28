@@ -1,0 +1,12 @@
+a = int(input())
+b = int(input())
+class MyException(Exception): 
+    pass
+def xyz(a,b): 
+    sum=a+b 
+    if sum<150:
+        raise MyException('custom Exception Occured')
+    else:
+        return sum
+
+print(xyz(a,b))
