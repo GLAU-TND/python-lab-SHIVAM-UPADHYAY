@@ -1,0 +1,25 @@
+#type error....
+try:
+    a=23
+    b='python'
+    c=a+b
+except TypeError:
+    print('Type error')
+else:
+    print('no error')
+#value error....
+try:
+    print(float('python'))
+except ValueError:
+    print('value error')
+else:
+    print('not error')
+#attribute error...
+class Attribute():
+    a = 2
+    print(a)
+try:
+    object=Attribute()
+    print(object.Attribute)
+except AttributeError:
+        print("Attribite error")
